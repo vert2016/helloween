@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-		<title>Helloween Party</title>
-		<meta charset="utf-8">
-	</head>
+        <title>Helloween</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css" type="text/css" />
+    </head>
     <body>
         <header>
             <figure>
-               <img src="cloth1.jpg" alt="Dress up">
+               <img src="quiz1.jpg" alt="Quiz">
            </figure>
            <h1>Helloween Party</h1>
            <h2>Zelena str.67</h2>
            <h2>22.00 31.10</h2>
         </header>
-          <nav>
+        <nav>
             <a href="index.html"><img src="hall.svg" alt="Home button" height="150" width="150"></a>
             <a href="dress_up.html"><img src="hat.svg" alt="Dress Up" height="150" width="150"></a>
             <a href="pumpkin.html"><img src="pumpkin.svg" alt="Carve your Jack o Lantern" height="150" width="150"></a>
@@ -29,8 +30,117 @@
                 <li><a href="">Where is teh club?</a></li>
             </ul>
         </aside>
-        <article>
-        
+        <article id="first">
+            <form action="https://formspree.io/marta.bzl@gmail.com"
+      method="post" style="text-align:center;">
+                <fieldset style="border:0px;">
+                    <legend><strong>Personal information:</strong></legend>
+                    <br>
+                    <label for="name">Your first name:</label>
+                    <input type="text" name="name" placeholder="Your first name">
+                    <br>
+                    <label for="name">Your second name:</label>
+                    <input type="text" name="name" placeholder="Your second name">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="_replyto" placeholder="Email" required>
+                    <br>
+                    <h3>Your age:</h3>
+                    <input type="radio" name="age" value="10-20">
+                    <label for="name">10-20</label>
+                    <br>
+                    <input type="radio" name="age" value="20-30">
+                    <label for="name">20-30</label>
+                    <br>
+                    <input type="radio" name="age" value="30-50">
+                    <label for="name">30-50</label>
+                    <br>
+                    <input type="radio" name="age" value="50-99">
+                    <label for="name">50-99</label>
+                    <br>
+                    <h3>Your gender:</h3>
+                    <input type="radio" name="gender" value="Male">
+                    <label for="name">Male</label>
+                    <br>
+                    <input type="radio" name="gender" value="Female">
+                    <label for="name">Female</label>
+                    <br>
+                    <input type="radio" name="gender" value="Others">
+                    <label for="name">Others</label>
+                    <br>
+                    <h3>Your country of origin:</h3>
+                    <select name="option">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Ukraine</option>
+                        <option value="2">Poland</option>
+                        <option value="3">Denmark</option>
+                        <option value="2">Germany</option>
+                        <option value="3">USA</option>
+                        <option value="2">Switzerland</option>
+                        <option value="3">Czech Republic</option>
+                    </select>
+                    <br>
+                </fieldset>
+                <fieldset style="border:0px;">
+                    <h3>Do you celebrate Helloween:</h3>
+                    <input type="radio" name="celebrate" id="celebrate" value="yes">
+                    <label for="celebrate">Yes</label>
+                    <br>
+                    <input type="radio" name="celebrate" id="celebrate" value="no">
+                    <label for="celebrate">No</label>
+                    <br>
+                    <h3>How did you get to know about Helloween:</h3>
+                    <input type="checkbox" name="how" id="name" value="school">
+                    <label for="how">At school</label>
+                    <br>
+                    <input type="checkbox" name="how" id="how" value="family">
+                    <label for="how">From your family and relatives</label>
+                    <br>
+                    <input type="checkbox" name="how" id="how" value="friends">
+                    <label for="how">From your friends</label>
+                    <br>
+                    <input type="checkbox" name="how" id="how" value="english">
+                    <label for="how">At English classes</label>
+                    <br>
+                    <input type="checkbox" name="how"id="how" value="internet">
+                    <label for="how">On the Internet</label>
+                    <br>
+                    <label for="comment">Others</label>
+                    <textarea id="comment" placeholder="Your version"></textarea>
+                </fieldset>
+                <fieldset style="border:0px">
+                    <h1>Check yourself!<br>Do a quiz!</h1>
+                    <h2>What date is Halloween?</h2>
+                    <input type="radio" name="date" value="30/10">
+                    <label for="date">30/10</label>
+                    <input type="radio" name="date" value="31/11">
+                    <label for="date">31/11</label>
+                    <input type="radio" name="date" value="31/10">
+                    <label for="date">31/10</label>
+                    <h2>What is the proper name for a pumpkin face?</h2>
+                    <input type="radio" name="pumpkin" value="Jack o' Lantern">
+                    <label for="date">Jack o' Lantern</label>
+                    <input type="radio" name="pumpkin" value="Jack Sprat">
+                    <label for="date">Jack Sprat</label>
+                    <input type="radio" name="pumpkin" value="Pumpkin">
+                    <label for="date">Ghost</label>
+                    <h2>When door knocking for candy...what do you say?</h2>
+                    <input type="radio" name="year" value="Candies!">
+                    <label for="date">Candies!</label>
+                    <input type="radio" name="year" value="Booo!">
+                    <label for="date">Booo!</label>
+                    <input type="radio" name="year" value="Trick or Treat">
+                    <label for="date">Trick or Treat</label>
+                    <br>
+                    <br>
+                    <input type="submit" name="submit" value="send">
+                </fieldset>
+            </form>
+        </article>
+        <article id="second" style="text-align:center;">
+            <h1>Thank You for taking part in our questionnaire!</h1>
+            <h1>Further information about free ickets you will get at your email</h1>
+           
         </article>
         <footer>
             <h3>email:hell@helloween.com</h3>
@@ -38,6 +148,7 @@
             <h3>050 0456789</h3>
             <h3>Lviv, Zelena str. 67</h3>
         </footer>
+        
         
     </body>
 </html>
