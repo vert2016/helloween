@@ -1,6 +1,12 @@
 nav img{
     display: inline;
 }
+#flag{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 150px;
+}
 
 #main{
    position: relative;
